@@ -39,6 +39,7 @@ class EGBADExperiment(Experiment):
             "egbad",
             list(self.hyperparameters().union(EGBAD.hyperparameters())),
         )
+        print("what is ok")
 
     def experiment(
         self, hps: Dict, log_dir: Path, dataset: AnomalyDetectionDataset
